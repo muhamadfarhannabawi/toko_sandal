@@ -9,7 +9,7 @@
 # packages, and plugins designed to encourage good coding practices.
 analyzer:
   errors:
-    await_only_futures: ignore ignore ignore
+    await_only_futures: ignore ignore ignore ignore ignore ignore ignore ignore
     strict_top_level_inference: ignore
 include: package:flutter_lints/flutter.yaml
 
