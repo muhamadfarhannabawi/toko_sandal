@@ -36,7 +36,7 @@ class _LoginPageState extends State<LoginPage> {
 
     if (!_formKey.currentState!.validate()) return;
 
-    await _performLogin(() => context.read<AuthProvider>().loginEmail(
+    await _performLogin(() => context.read<AuthProvider>().loginWithEmail(
           email: _emailCtrl.text.trim(),
           password: _passCtrl.text,
         ));
@@ -44,7 +44,7 @@ class _LoginPageState extends State<LoginPage> {
 
   /// LOGIN GOOGLE
   Future<void> _loginGoogle() async {
-    await _performLogin(() => context.read<AuthProvider>().loginGoogle());
+    await _performLogin(() => context.read<AuthProvider>().loginWithGoogle());
   }
 
   /// WRAPPER LOGIN
